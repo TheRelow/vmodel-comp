@@ -20,6 +20,9 @@ export default {
   watch: {
     input: function (val) {
       this.$emit('update:value', val)
+    },
+    value: function (val) {
+      this.input = val
     }
   }
 }
